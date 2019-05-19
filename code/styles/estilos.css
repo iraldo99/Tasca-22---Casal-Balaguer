@@ -1,13 +1,18 @@
+/* CÓDIGO POR: IRALDO ARMANDO GONZÁLEZ CARVALLO
+   ESTUDIANTE DE GRADO SUPERIOR - IES FRANCESC DE BORJAMOLL */
 body{
   background-image: url("../images/fondo.png");
   background-repeat: repeat;
 }
 .cuerpo{
-  margin: 0 14% 0 14%;
+  margin: 0 14%;
 }
+/* Hasta aquí la estructura básica de la página - (Deja márgenes a los lados y pone imagen de fondo) */
 
+/* La web está dividida en dos partes, superior e inferior */
+/* "portada" Es el div de la parte superior de la web, lo que sería el "header" */
 .portada{
-  height: 30%;
+  height: 16.45em;
   width: 100%;
   background-image: url("../images/museu/portada.png");
   background-repeat: no-repeat;
@@ -24,54 +29,15 @@ body{
 .lan_box{
   position: relative;
   float: right;
-  height: 1em;
-  width: 2em;
-  background-color: gray;
-}
-.lan_box img:lang(es) {
-  src: url("../images/logo/es.png");
-  max-height: 80%;
-  max-width: 50%;
+  height: 1.4em;
+  width: 5em;
+  background-color: white;
 }
 
-
+/* "tronco" Es el div de la parte inferior de la web, lo que sería el body */
 .tronco{
   margin-top: 0.7em;
 }
-.t1{
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 2.4em;
-  color: white;
-  font-weight: bold;
-  text-shadow: 2px 2px rgb(97, 95, 95);
-}
-.t2{
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size: 1.8em;
-  color: white;
-}
-.contenido{
-  margin: 0;
-  text-align: center;
-  background-color: #f3f3f3;
-  width: 70%;
-  float: right;
-}
-.titular{
-  margin: 0;
-  text-align: center;
-  background-color: #440912;
-  padding: 0.12em;
-}
-.info{
-  height: 400px;
-}
-
-
-
-
-
-
 .menu-lateral{
   margin: 0;
   width: 30%;
@@ -83,7 +49,6 @@ body{
 }
 .menu-lateral .nav a{
   width: 90%;
-  max-width: 234px;
   background-color: #440912;
   margin: 0 0 0.3em 0;
   padding: 0.8em;
@@ -92,18 +57,88 @@ body{
 }
 .menu-lateral .nav .active{
   background-color: #AB2A3E;
-  width: 100%;
-  max-width: 260px;
+  width: 95%;
 }
 .menu-lateral .nav :hover{
   background-color: #B34959;
   width: 100%;
-  max-width: 265px;
 }
 
+/* "contenido" Es la página en sí, la información que se tendrá que desplegar
+   dependiendo de en qué apartado del menú hayas entrado
+   tiene un "titular" y un cuadro de texto "info" */
+.contenido{
+  margin: 0;
+  text-align: center;
+  background-color: #f8f7f7;
+  width: 70%;
+  float: right;
+}
+.titular{
+  margin: 0;
+  text-align: center;
+  background-color: #440912;
+  padding: 0.12em;
+  position: relative;
+}
+.info{
+  padding-top: 1em;
+}
+.info p{
+  padding: 0 0.5em 0.4em 0.5em;
+}
+.info:first-child{
+  margin-top: 1.5em;
+}
 
+/* Estas son las clases que utiliza la página para poner textos */
+.t1{ /* He preferido crear estas clases en lugar de usar h1, h2, etc */
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 2.4em;
+  color: white;
+  font-weight: bold;
+  text-shadow: 3px 3px rgb(97, 95, 95);
+}
+.t2{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 1.8em;
+  color: white;
+}
+.lang {
+  font-size: 0.8em;
+  font-weight: bold;
+  color: rgb(97, 95, 95);
+  padding: 1% 5% 1% 5%;
+}
 
+/* Ajustes para que el texto del menú no se divida en una segunda línea según el tamaño de la web */
+@media only screen and (max-width: 1300px) {
+  .menu-lateral .nav a{
+    font-size: 0.9em;
+  }
+}
+@media only screen and (max-width: 1190px) {
+  .menu-lateral .nav a{
+    font-size: 0.8em;
+  }
+}
+@media only screen and (max-width: 1050px) {
+  .menu-lateral .nav a{
+    font-size: 0.7em;
+  }
+}
+@media only screen and (max-width: 910px) {
+  .menu-lateral .nav a{
+    font-size: 0.65em;
+  }
+}
+@media only screen and (max-width: 840px) {
+  .menu-lateral .nav a{
+    font-size: 0.6em;
+  }
+}
 
+/* Ajuste del espacio entre el Menú Lateral y el Contenido de las páginas según el tamaño de la pantalla */
 @media only screen and (min-width: 1400px) {
   .menu-lateral{
     width: 28%;

@@ -1,40 +1,56 @@
+<!DOCTYPE html>
+<!-- CÓDIGO POR: IRALDO ARMANDO GONZÁLEZ CARVALLO -->
+<!-- ESTUDIANTE DE GRADO SUPERIOR - IES FRANCESC DE BORJAMOLL -->
 <html>
 <head>
 	<link rel="stylesheet" href="code/styles/bootstrap.min.css">
 	<link rel="stylesheet" href="code/styles/estilos.css">
+	<meta charset="utf-8">
 </head>
 
 <body>
 <div class="cuerpo">
 	<div class="portada"> <!---------------------------- PORTADA -->
-		<div class="titulo t1">CASAL CAN BALAGUER</div>
-		<div class="lan_box">
-			<img class="lan_logo" lang="es" src="code/images/logo/es.png">
-		</div>
-	</div>
-	<div class="tronco"> <!------------------------- TRONCO -->
 
-		<div class="contenido">
-			<div class="titular t2">INICIO</div>
+		<div class="titulo t1">CASAL CAN BALAGUER</div>
+		
+		<form id="formLang" class="lan_box" action="./historia_casal.html" method="POST">
+			<span class="lang">IDIOMA</span>
+			<div class="form-group ">
+				<select name="idioma" class="form-control" id="langSel" onchange="enviarFormLang()">
+					<option>ES</option>
+					<option>CA</option>
+					<option>EN</option>
+					<option>DE</option>
+				</select>
+			</div>
+		</form>
+
+	</div>
+	<div class="tronco"> <!--------------------------------- TRONCO -->
+
+		<div class="menu-lateral"> <!------------------------- BARRA DE NAVEGACIÓN -->
+			<nav class="nav flex-column">
+				<a class="nav-link active" href="CasalBalaguer.html">Inicio</a>
+				<a class="nav-link" href="code/pages/noticias.html">Noticias</a>
+				<a class="nav-link" href="code/pages/historia_casal.html">Historia del Casal Balaguer</a>
+				<a class="nav-link" href="code/pages/historia_institucion.html">Historia de la Institución</a>
+				<a class="nav-link" href="code/pages/exposiciones.html">Exposiciones</a>
+				<a class="nav-link" href="code/pages/tienda.html">Tienda Online</a>
+				<a class="nav-link" href="code/pages/nosotros.html">Sobre Nosotros</a>
+			</nav>
+		</div>
+
+		<div class="contenido"> <!------------------------------- CONTENIDO -->
+			<div class="titular t2">Inicio</div>
 			<div class="info">
-				<p>BLA BLA BLA</p>
 				<p>BLA BLA BLA</p>
 			</div>
 		</div>
 
-		<div class="menu-lateral"> <!------------------------- BARRA DE NAVEGACIÓN -->
-			<nav class="nav flex-column">
-				<a class="nav-link active" href="#">Inicio</a>
-				<a class="nav-link" href="code/pages/noticias.html">Noticias</a>
-				<a class="nav-link" href="code/pages/historia_casal.html">Historia del Casal Balaguer</a>
-				<a class="nav-link" href="code/pages/historia_institucion.html">Historia de la Institución</a>
-				<a class="nav-link" href="#">Exposiciones</a>
-				<a class="nav-link" href="#">Tienda Online</a>
-			</nav>
-		</div>
 	</div>
 </div>
-	<script src="code/javascript/bootstrap.js"></script>
+	<script src="code/javascript/bootstrap.min.js"></script>
 	<script src="code/javascript/scripts.js"></script>
 </body>
 </html>
