@@ -5,7 +5,7 @@ body{
   background-repeat: repeat;
 }
 .cuerpo{
-  margin: 0 14%;
+  margin: 0 13%;
 }
 /* Hasta aquí la estructura básica de la página - (Deja márgenes a los lados y pone imagen de fondo) */
 
@@ -103,6 +103,13 @@ body{
 .info p{
   padding: 0 0.5em 0.4em 0.5em;
 }
+.downloadLink a{
+
+}
+.downloadLink a img{
+  max-height: 36px;
+  max-width: 21px;
+}
 
 /* Estas son las clases que utiliza la página para poner textos */
 .t1{ /* He preferido crear estas clases en lugar de usar h1, h2, etc */
@@ -122,6 +129,10 @@ body{
   /*font-weight: bold;*/
   color: rgb(97, 95, 95);
   padding: 0 0 5px 0;
+}
+
+ul{
+  text-align: left;
 }
 
 /* Ajustes para que el texto del menú no se divida en una segunda línea según el tamaño de la web */

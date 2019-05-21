@@ -7,3 +7,7 @@ function enviarFormLang() {
 function cambiarIdioma(idioma){
     $("#idioma_actual").val(idioma);
 }
+
+document.ready(){
+    
+}
