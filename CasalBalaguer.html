@@ -14,17 +14,17 @@
 
 		<div class="titulo t1">CASAL CAN BALAGUER</div>
 		
-		<form id="formLang" class="lan_box" action="./historia_casal.html" method="POST">
-			<span class="lang">IDIOMA</span>
-			<div class="form-group ">
-				<select name="idioma" class="form-control" id="langSel" onchange="enviarFormLang()">
-					<option>ES</option>
-					<option>CA</option>
-					<option>EN</option>
-					<option>DE</option>
-				</select>
+		<!--<span class="lang">IDIOMA</span>-->
+		<div class="dropdown lan_box">
+			<button class="btn btn-light dropdown-toggle lan_btn" type="button" id="dropdownLang" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				<span class="lang">IDIOMA</span>
+			</button>
+			<div class="dropdown-menu lan_menu" aria-labelledby="dropdownLang">
+			  <a class="dropdown-item" href="#"><img class="img_lan_logo" src="code/images/logo/es.png"></a>
+			  <a class="dropdown-item" href="#"><img class="img_lan_logo" src="code/images/logo/ca.png"></a>
+			  <a class="dropdown-item" href="#"><img class="img_lan_logo" src="code/images/logo/en.png"></a>
 			</div>
-		</form>
+		  </div>
 
 	</div>
 	<div class="tronco"> <!--------------------------------- TRONCO -->
@@ -44,13 +44,17 @@
 		<div class="contenido"> <!------------------------------- CONTENIDO -->
 			<div class="titular t2">Inicio</div>
 			<div class="info">
-				<p>BLA BLA BLA</p>
+				<p id="parrafo1">BLA BLA BLA</p>
+				<p id="parrafo2">ey</p>
 			</div>
 		</div>
 
 	</div>
 </div>
 	<script src="code/javascript/bootstrap.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 	<script src="code/javascript/scripts.js"></script>
 </body>
 </html>

@@ -23,15 +23,31 @@ body{
 .portada .titulo{
   position: relative;
   padding: 1em;
-  max-width: 100%;
+  width: 80%;
   float: left;
 }
 .lan_box{
   position: relative;
   float: right;
   height: 1.4em;
-  width: 5em;
+  
   background-color: white;
+}
+.lan_btn{
+  width: 5.5em;
+  height: 1.8em;
+}
+.lan_menu{
+  background-color: white;
+  min-width: 4em;
+  width: 4.3em;
+}
+.lan_menu .dropdown-item[value="ES"]{
+  background-color: red;
+}
+.img_lan_logo{
+  width: 1.8em;
+  height: 1.25em;
 }
 
 /* "tronco" Es el div de la parte inferior de la web, lo que sería el body */
@@ -87,9 +103,6 @@ body{
 .info p{
   padding: 0 0.5em 0.4em 0.5em;
 }
-.info:first-child{
-  margin-top: 1.5em;
-}
 
 /* Estas son las clases que utiliza la página para poner textos */
 .t1{ /* He preferido crear estas clases en lugar de usar h1, h2, etc */
@@ -106,9 +119,9 @@ body{
 }
 .lang {
   font-size: 0.8em;
-  font-weight: bold;
+  /*font-weight: bold;*/
   color: rgb(97, 95, 95);
-  padding: 1% 5% 1% 5%;
+  padding: 0 0 5px 0;
 }
 
 /* Ajustes para que el texto del menú no se divida en una segunda línea según el tamaño de la web */
@@ -135,6 +148,11 @@ body{
 @media only screen and (max-width: 840px) {
   .menu-lateral .nav a{
     font-size: 0.6em;
+  }
+}
+@media only screen and (max-width: 855px) {
+  .portada .titulo{
+    font-size: 2.1em;
   }
 }
 

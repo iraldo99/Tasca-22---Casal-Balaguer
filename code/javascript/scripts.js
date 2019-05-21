@@ -3,3 +3,7 @@
 function enviarFormLang() {
     document.forms["formLang"].submit();
 }
+
+function cambiarIdioma(idioma){
+    $("#idioma_actual").val(idioma);
+}
