@@ -49,6 +49,11 @@ body{
   width: 1.8em;
   height: 1.25em;
 }
+#cont{ /* TO-DO Arreglar botón cuando la página baja de max-width: 650px*/
+  position: relative;
+  float: right;
+  top: 77%;
+}
 
 /* "tronco" Es el div de la parte inferior de la web, lo que sería el body */
 .tronco{
@@ -130,6 +135,14 @@ body{
   color: rgb(97, 95, 95);
   padding: 0 0 5px 0;
 }
+.cont{
+  text-decoration: none;
+  color: rgb(97, 95, 95);
+}
+.cont:hover{
+  text-decoration: none;
+  color: rgb(97, 95, 95);
+}
 
 ul{
   text-align: left;
@@ -190,5 +203,14 @@ ul{
   }
   .contenido{
     width: 76%;
+  }
+}
+
+/* Ajuste para el botón de contacto */
+@media only screen and (min-width: 1378px) {
+  #cont{
+    position: relative;
+    bottom: 40px;
+    right: -90px;
   }
 }
