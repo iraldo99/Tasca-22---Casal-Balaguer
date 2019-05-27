@@ -1,18 +1,21 @@
 <!DOCTYPE html>
-<!-- CÓDIGO POR: IRALDO ARMANDO GONZÁLEZ CARVALLO -->
+<!-- CODIGO POR: IRALDO ARMANDO GONZALEZ CARVALLO -->
 <!-- ESTUDIANTE DE GRADO SUPERIOR - IES FRANCESC DE BORJAMOLL -->
 <html>
 <head>
 	<link rel="stylesheet" href="code/styles/bootstrap.min.css">
 	<link rel="stylesheet" href="code/styles/estilos.css">
 	<meta charset="utf-8">
+	<title>MUSEU CAN BALAGUER</title>
 </head>
 
 <body>
-<div class="cuerpo">
-	<div class="portada"> <!---------------------------- PORTADA -->
+<div id="cuerpo">
+	<div id="portada"> <!---------------------------- PORTADA -->
 
-		<div class="titulo t1">CASAL CAN BALAGUER</div>
+		<div><img id="logo" src="code/images/logo/museu2.png" alt="logoMu"></div>
+
+		<div class="titulo t1">MUSEU CAN BALAGUER</div>
 		
 		<!--<span class="lang">IDIOMA</span>-->
 		<div class="dropdown lan_box">
@@ -20,23 +23,24 @@
 				<span class="lang">IDIOMA</span>
 			</button>
 			<div class="dropdown-menu lan_menu" aria-labelledby="dropdownLang">
-				<a class="dropdown-item" href="#"><img class="img_lan_logo" src="code/images/logo/es.png"></a>
-				<a class="dropdown-item" href="#"><img class="img_lan_logo" src="code/images/logo/ca.png"></a>
-				<a class="dropdown-item" href="#"><img class="img_lan_logo" src="code/images/logo/en.png"></a>
+				<a class="dropdown-item" href="#"><img class="img_lan_logo" src="code/images/logo/es.png" alt="logoEs"></a>
+				<a class="dropdown-item" href="#"><img class="img_lan_logo" src="code/images/logo/ca.png" alt="logoCa"></a>
+				<a class="dropdown-item" href="#"><img class="img_lan_logo" src="code/images/logo/en.png" alt="logoEn"></a>
+				<a class="dropdown-item" href="#"><img class="img_lan_logo" src="code/images/logo/de.png" alt="logoDe"></a>
 			</div>
 		</div>
 		<!-- Añadir logos de redes sociales (footer?) -->
 		<button class="btn btn-light" type="button" id="cont">
-			<a href="code/pages/contacto.html" class="cont">Contáctanos</a>
+			<a href="code/pages/contacto.html" class="cont">Contacto</a>
 		</button>
 
 	</div>
-	<div class="tronco"> <!--------------------------------- TRONCO -->
+	<div id="tronco"> <!--------------------------------- TRONCO -->
 
-		<div class="menu-lateral"> <!------------------------- BARRA DE NAVEGACIÓN -->
+		<div class="menu-lateral"> <!------------------------- BARRA DE NAVEGACION -->
 			<nav class="nav flex-column">
 				<a class="nav-link active" href="CasalBalaguer.html">Inicio</a>
-				<a class="nav-link" href="code/pages/historia_casal.html">Historia del Casal Balaguer</a>
+				<a class="nav-link" href="code/pages/historia_casal.html">Historia del Museu Can Balaguer</a>
 				<a class="nav-link" href="code/pages/historia_institucion.html">Historia de la Institución</a>
 				<a class="nav-link" href="code/pages/exposiciones.html">Exposiciones</a>
 				<a class="nav-link" href="code/pages/actividades.html">Actividades</a>
@@ -45,15 +49,120 @@
 			</nav>
 		</div>
 
-		<div class="contenido"> <!------------------------------- CONTENIDO -->
+		<div id="contenido"> <!------------------------------- CONTENIDO -->
 			<div class="titular t2">Inicio</div>
 			<div class="info">
-				<p id="parrafo1">BLA BLA BLA</p>
-				<p id="parrafo2">prueba1</p>
+				<p>El Museu Can Balaguer ha nacido este 2019 para proporcionar al público la oportunidad de aprender más sobre la historia de los museos. Contamos con numerosos expertos en diferentes campos como historia del arte que darán su mejor esfuerzo para proporcionarte a ti y a tu familia una experiencia lo mejor posible.</p>
+				<p>Además de exposiciones también hay juegos para los más jóvenes (y no tan jóvenes) y medios digitales.</p>
+				<p>Si por el contrario te interesa más conocer como era una casa típica mallorquina y conocer esta cultura, la planta noble está ordenada con los muebles originales de la exposición para sumergirse de lleno.</p>
+				<br>
+				<p><span class="difuso"><b>Horario</b></span><br>De martes a domingo de 9:00 a 20:00</p>
+				<br>
+				<p><span class="difuso"><b>Visitas</b></span></p>
+				<table id="visitas" class="table-striped">
+					<tr>
+						<td>
+							<div class="t3">VISITA INDIVIDUAL</div>
+						</td>
+						<td>
+							<ul>
+								<li>Reserva con 24 horas de antelación</li>
+							</ul>
+						</td>
+						<td>
+							<br> <!--empty-->
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="t3">VISITA INFANTIL</div>
+						</td>
+						<td>
+							<ul>
+								<li>Niños menores de 10 años</li>
+								<li>Es necesaria la reserva con una antelación mínima de 48 horas.</li>
+							</ul>
+						</td>
+						<td>
+							<ul>
+								<li>Cuenta con actividades didácticas</li>
+								<li>Opción de hacer talleres educativos.</li>
+								<li>Elementos multimedia</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="t3">VISITAS EN GRUPO</div>
+						</td>
+						<td>
+							<ul>
+								<li>Cualquier franja de edad a partir de los 10 años.</li>
+								<li>Ideal para alumnos de Educación Primaria, Secundaria o Bachillerato.</li>
+								<li>Es necesaria la reserva con una antelación mínima de 24 horas.</li>
+							</ul>
+						</td>
+						<td>
+							<ul>
+								<li>La visita se adaptará</li>
+								<li>Disponible para personas con necesidades especiales</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="t3">VISITAS ESPECIALES</div>
+						</td>
+						<td>
+							<ul>
+								<li>Puede ser individual o grupal.</li>
+								<li>Es necesaria la reserva con una antelación mínima de 48 horas.</li>
+							</ul>
+						</td>
+						<td>
+							<ul>
+								<li>Estas visitas se adaptan a el tipo de visitante que venga.</li>
+								<li>Ideal para estudiantes de grado →  se adapta la visita a las necesidades didácticas.
+								<br>(Ex: estudiantes de Arquitectura, Historia, Historia del arte…)</li>
+								<li>Se aceptan diversas propuestas</li>
+							</ul>
+						</td>
+					</tr>
+				</table>
+				<br>
+				<p>Para hacer la reserva bien puedes llamarnos al <b>971 99 99 99</b> o adjuntar en el apartado de <b>contacto</b> el documento de solicitud de reserva, en el cual ha de constar nombre, número de personas, tipo de visita, fecha y hora de preferencia y comentarios<br><span class="difuso">(en el caso de precisarlo).</span></p>
+				<p class="downloadLink"><a href="#"><img src="code/images/logo/pdf.png"></a>&emsp;<a href="#">Solicitud de Reserva</a></p>
 			</div>
 		</div>
 
 	</div>
+	
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div id="media" class="col">
+					<div class="row">
+						<p class="media_title">Redes Sociales</p>
+					</div>
+					<div class="row">
+						<a href="code/pages/insta.html"><img class="logo" src="code/images/logo/insta2.png" alt="logoIn"></a>
+					</div>
+					<div class="row">
+						<a href="code/pages/face.html"><img class="logo" src="code/images/logo/face.png" alt="logoFa"></a>
+					</div>
+				</div>
+				<div class="col">
+					
+				</div>
+				<div class="col">
+					<div id="copyleft" class="row">
+						<span class="media_title copyleft">Copyright © 2019 - Balaguer</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
 </div>
 	<script src="code/javascript/bootstrap.min.js"></script>
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!-- CODIGO POR: IRALDO ARMANDO GONZALEZ CARVALLO -->
+<!-- ESTUDIANTE DE GRADO SUPERIOR - IES FRANCESC DE BORJAMOLL -->
+<html>
+<head>
+	<link rel="stylesheet" href="../styles/bootstrap.min.css">
+	<link rel="stylesheet" href="../styles/estilos.css">
+	<meta charset="utf-8">
+	<title>MUSEU CAN CAN BALAGUER</title>
+</head>
+
+<body>
+<div id="cuerpo">
+	<div id="portada"> <!---------------------------- PORTADA -->
+
+		<div class="titulo t1">MUSEU CAN BALAGUER</div>
+
+		<!--<span class="lang">IDIOMA</span>-->
+		<div class="dropdown lan_box">
+			<button class="btn btn-light dropdown-toggle lan_btn" type="button" id="dropdownLang" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				<span class="lang">IDIOMA</span>
+			</button>
+			<div class="dropdown-menu lan_menu" aria-labelledby="dropdownLang">
+				<a class="dropdown-item" href="#"><img class="img_lan_logo" src="../images/logo/es.png" alt="logoEs"></a>
+				<a class="dropdown-item" href="#"><img class="img_lan_logo" src="../images/logo/ca.png" alt="logoCa"></a>
+				<a class="dropdown-item" href="#"><img class="img_lan_logo" src="../images/logo/en.png" alt="logoEn"></a>
+				<a class="dropdown-item" href="#"><img class="img_lan_logo" src="../images/logo/de.png" alt="logoDe"></a>
+			</div>
+		</div>
+	
+	</div>
+	<div id="tronco"> <!--------------------------------- TRONCO -->
+	
+		<div class="menu-lateral"> <!------------------------- BARRA DE NAVEGACIÓN -->
+			<nav class="nav flex-column">
+				<a class="nav-link" href="../../CasalBalaguer.html">Inicio</a>
+				<a class="nav-link" href="historia_casal.html">Historia del Museu Can Balaguer</a>
+				<a class="nav-link" href="historia_institucion.html">Historia de la Institución</a>
+				<a class="nav-link" href="exposiciones.html">Exposiciones</a>
+				<a class="nav-link" href="actividades.html">Actividades</a>
+				<a class="nav-link" href="tienda.html">Tienda Online</a>
+				<a class="nav-link" href="noticias.html">Noticias y Novedades</a>
+			</nav>
+		</div>
+
+		<div id="contenido"> <!------------------------------- CONTENIDO -->
+			
+			<div class="titular t2">Formulario de Contacto</div>
+
+			<div class="info">
+
+				<form class="contacto" method="POST" action="mensaje.html">
+					<span class="difuso">Rellene los campos para contactar con nuestra entidad.</span>
+					<div id="inicio" class="row">
+						<div class="col">
+							<input class="nombre" name="nombre" type="text" placeholder="Nombre">
+						</div>
+						<div class="col">
+							<input class="apellido" name="apellido" type="text" placeholder="Apellidos">
+						</div>
+					</div>
+					<div id="mensaje" class="row">
+						<div class="col">
+							<textarea class="form-control mensaje" name="contenido" placeholder="Mensaje..." rows="8"></textarea>
+						</div>
+					</div>
+					<div id="envio" class="row">
+						<div class="col">
+							<button class="btn btn-secondary btn-balaguer"><a href="contacto.html">Cancelar</a></button>
+						</div>
+						<div class="col">
+							<input class="btn btn-secondary btn-balaguer" onClick="agradecerMensaje()" type="submit" value="Enviar Mensaje">
+						</div>
+					</div>
+				</form>
+
+			</div>
+
+		</div>
+		
+	</div>
+
+	<!--footer-->
+
+</div>
+<script src="code/javascript/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="code/javascript/scripts.js"></script>
+</body>
+</html>
