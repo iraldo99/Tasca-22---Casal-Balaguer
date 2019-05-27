@@ -8,10 +8,6 @@ function cambiarIdioma(idioma){
     $("#idioma_actual").val(idioma);
 }
 
-$( document ).ready(function() {
-    
-});
-
 function agradecerMensaje(){
     alert("Gracias por enviarnos tu mensaje, lo tendremos en consideración.");
 }
