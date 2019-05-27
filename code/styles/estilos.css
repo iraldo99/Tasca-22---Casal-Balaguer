@@ -219,6 +219,11 @@ td ul{
   border: 1px solid;
   border-color: #d4d4d4;
   box-shadow: 2px 4px #aaaaaa;
+  width: 120px;
+}
+.objeto-tienda img{
+  height: 100px;
+  width: 80px;
 }
 
 
