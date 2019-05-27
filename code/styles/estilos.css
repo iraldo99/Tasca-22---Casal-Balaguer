@@ -53,10 +53,23 @@ body{
 #cont{ /* TO-DO Arreglar botón cuando la página baja de max-width: 650px*/
   position: relative;
   float: right;
-  top: 77%;
+  top: 78.5%;
   padding: 0;
   height: 35px;
   width: 105px;
+}
+/* Ajuste para el botón de contacto (se descoloca) */
+@media only screen and (min-width: 1304px) {
+  #cont{
+    position: relative;
+    top: 87%;
+    right: -89px;
+  }
+}
+#cont:hover{
+  background-color: rgb(138, 26, 43);
+  border-color: rgb(138, 26, 43);
+  color:white;
 }
 
 /* "tronco" Es el div de la parte inferior de la web, lo que sería el body */
@@ -112,6 +125,16 @@ body{
 .info p{
   padding: 0 0.5em 0.4em 0.5em;
 }
+
+#carruselExpo1{
+  width: 85%;
+  height: 8em;
+  margin-left: 7.5%;
+}
+
+.downloadLink{
+  margin-top: 3.2em;
+}
 .downloadLink a{
 
 }
@@ -165,13 +188,14 @@ form div#envio{
 .cont{
   text-decoration: none;
   color: rgb(97, 95, 95);
+  font-size: 0.9em;
 }
 .difuso{
   color: rgb(116, 116, 116);
 }
 .cont:hover{
   text-decoration: none;
-  color: rgb(97, 95, 95);
+  color: white;
 }
 
 ul{
@@ -245,11 +269,3 @@ ul{
   }
 }
 
-/* Ajuste para el botón de contacto */
-@media only screen and (min-width: 1378px) {
-  #cont{
-    position: relative;
-    top: 87.5%;
-    right: -55px;
-  }
-}
