@@ -216,6 +216,32 @@ form div#envio{
   margin-top: 30px;
   margin-bottom: 15px;
 }
+
+#btn-mensaje{
+  margin: 0 auto;
+  float: none;
+  height: 40px;
+}
+#telefono{
+  margin: 0 auto;
+  float: none;
+  margin-top: 25px;
+  font-size: 1.1em;
+}
+.link-balaguer{
+  color: #B34959;
+}
+.link-balaguer:hover{
+  color: rgb(204, 115, 128);
+}
+.media_title.mail{
+  font-size: 0.8em;
+}
+
+#contactar{
+  margin-left: 30px;
+}
+
 table{
   background-color: #e2e2e2;
   border: 2px;
@@ -226,6 +252,7 @@ table td{
   border-style: solid;
   border-color: black;
 }
+
 #visitas li{
   text-align: left;
 }
@@ -233,10 +260,12 @@ td:first-child{
   background-color: #f09eb0;
   font-weight: bold;
 }
+
 td ul{
   padding: 15px;
   padding-left: 30px;
 }
+
 #actividades{
   margin-top: 20px;
   margin-bottom: 30px;
@@ -281,19 +310,24 @@ td ul{
 /* Este es el footer o parte inferior de la web */
 footer{
   background-color: #440912;
-  height: 160px;
+  height: 190px;
   padding: 18px;
   margin-top: 5em;
 }
 .logo{
-  margin: 0.5em 0 0.5em 1.9em;
+  margin: 0 0 0.8em 1.9em;
   height: 30px;
   width: 30px;
 }
 #media{
   margin-left: 20px;
+  max-width: 130px;
+  float: left;
 }
-
+#mapaGoogle{
+  height: 130px;
+  width: 130px;
+}
 
 
 /* Estas son las clases que utiliza la página para poner textos */
@@ -334,15 +368,17 @@ footer{
 .media_title{
   color: rgb(148, 148, 148);
   font-weight: bold;
+  margin-bottom: 10px;
 }
 #copyleft{
-  float: right;
+  margin: 0;
+  right: 2px;
+  position: relative;
 }
 .copyleft{
   font-size: 0.8em;
-  padding-top: 100px;
   margin-right: 15px;
-  float: right;
+  position: relative;
 }
 
 .btn-balaguer a{
@@ -358,6 +394,15 @@ footer{
   color: white;
 }
 .btn-balaguer .light a:hover{
+  text-decoration: none;
+  color: white;
+}
+
+.btn-balaguer2.light a{
+  text-decoration: none;
+  color: white;
+}
+.btn-balaguer2.light a:hover{
   text-decoration: none;
   color: white;
 }
@@ -387,6 +432,15 @@ footer{
   color: white;
 }
 
+.btn-balaguer2.light{
+  background-color: #B34959;
+  border-color: #AB2A3E;
+  color: rgb(148, 148, 148);
+}
+.btn-balaguer2.light:hover{
+  background-color: #AB2A3E;
+  color: white;
+}
 
 
 
