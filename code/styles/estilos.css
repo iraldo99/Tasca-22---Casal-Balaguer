@@ -196,6 +196,7 @@ table{
 table td{
   border: 1px;
   border-style: solid;
+  border-color: black;
 }
 #visitas li{
   text-align: left;
@@ -208,8 +209,12 @@ td ul{
   padding: 15px;
   padding-left: 30px;
 }
+#actividades{
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
 #actividades tr:first-child{
-  background-color: #ee758f;
+  background-color: #f3829b;
   font-weight: bold;
 }
 #actividades p{
@@ -222,6 +227,7 @@ td ul{
   }
 }
 
+/* Clases de la "tienda" */
 .objeto-tienda{
   border: 1px solid;
   border-color: #d4d4d4;
@@ -236,7 +242,9 @@ td ul{
   height: 100px;
   width: 100px;
 }
-
+#row-tienda{
+  padding: 15px 15px 25px 15px;
+}
 
 
 
@@ -252,16 +260,10 @@ footer{
   height: 30px;
   width: 30px;
 }
-.central{
-  width: 80%;
-}
 #media{
   margin-left: 40px;
 }
 
-#mapaGoogle{
-  margin-top: 5px;
-}
 
 
 /* Estas son las clases que utiliza la página para poner textos */
@@ -359,27 +361,27 @@ footer{
     font-size: 0.9em;
   }
 }
-@media only screen and (max-width: 1358px) {
+@media only screen and (max-width: 1492px) {
   .menu-lateral .nav a{
     font-size: 0.8em;
   }
 }
-@media only screen and (max-width: 1206px) {
+@media only screen and (max-width: 1240px) {
   .menu-lateral .nav a{
     font-size: 0.7em;
   }
 }
-@media only screen and (max-width: 1055px) {
+@media only screen and (max-width: 1087px) {
   .menu-lateral .nav a{
     font-size: 0.6em;
   }
 }
-@media only screen and (max-width: 910px) {
+@media only screen and (max-width: 933px) {
   .menu-lateral .nav a{
     font-size: 0.55em;
   }
 }
-@media only screen and (max-width: 840px) {
+@media only screen and (max-width: 856px) {
   .menu-lateral .nav a{
     font-size: 0.50em;
   }
