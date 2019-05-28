@@ -151,10 +151,30 @@ body{
   padding: 0.2em 1.2em 0.4em 1.2em;
 }
 
+img.expo{
+  width: 220px;
+  height: 178px;
+}
 #carruselExpo1{
-  width: 85%;
-  height: 8em;
+  height: 300px;
+  width: 450px;
   margin-left: 7.5%;
+}
+#carruselExpo1 .carousel-item{
+  height: 300px;
+  width: 450px;
+}
+.objeto.expo{
+  padding: 15px;
+  width: 250px;
+  height: 410px;
+  float: none;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.expo p{
+  font-size: 0.72em;
+  color: #440912;
 }
 
 .downloadLink{
@@ -228,17 +248,19 @@ td ul{
 }
 
 /* Clases de la "tienda" */
-.objeto-tienda{
+.objeto{
   border: 1px solid;
   border-color: #d4d4d4;
   box-shadow: 2px 4px #aaaaaa;
+}
+.objeto.tienda{
   max-width: 160px;
   max-height: 280px;
 }
-.objeto-tienda:hover{
+.objeto.tienda:hover{
   background-color: #d4d4d4;
 }
-.objeto-tienda img{
+.objeto.tienda img{
   height: 100px;
   width: 100px;
 }
@@ -251,17 +273,17 @@ td ul{
 /* Este es el footer o parte inferior de la web */
 footer{
   background-color: #440912;
-  height: 250px;
-  padding: 30px;
+  height: 160px;
+  padding: 18px;
   margin-top: 5em;
 }
 .logo{
-  margin: 0.5em 0 1.6em 2.4em;
+  margin: 0.5em 0 0.5em 1.9em;
   height: 30px;
   width: 30px;
 }
 #media{
-  margin-left: 40px;
+  margin-left: 20px;
 }
 
 
@@ -278,6 +300,10 @@ footer{
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 1.8em;
   color: white;
+}
+.t3{
+  font-weight: bold;
+  font-size: 1.2em;
 }
 .lang {
   font-size: 0.8em;
@@ -306,7 +332,8 @@ footer{
 }
 .copyleft{
   font-size: 0.8em;
-  padding-top: 190px;
+  padding-top: 100px;
+  margin-right: 15px;
   float: right;
 }
 

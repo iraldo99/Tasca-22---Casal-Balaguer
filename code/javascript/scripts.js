@@ -11,3 +11,7 @@ function cambiarIdioma(idioma){
 function agradecerMensaje(){
     alert("Gracias por enviarnos tu mensaje, lo tendremos en consideración.");
 }
+
+$(document).ready(function(){
+    $("#cont").addClass("reload");
+});

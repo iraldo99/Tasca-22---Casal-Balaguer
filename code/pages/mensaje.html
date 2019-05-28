@@ -13,9 +13,10 @@
 <div id="cuerpo">
 	<div id="portada"> <!---------------------------- PORTADA -->
 
+		<div><img id="logo" src="../images/logo/museu2.png" alt="logoMu"></div>
+
 		<div class="titulo t1">MUSEU CAN BALAGUER</div>
 
-		<!--<span class="lang">IDIOMA</span>-->
 		<div class="dropdown lan_box">
 			<button class="btn btn-light dropdown-toggle lan_btn" type="button" id="dropdownLang" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 				<span class="lang">IDIOMA</span>
@@ -28,6 +29,10 @@
 			</div>
 		</div>
 	
+		<button class="btn btn-light" type="button" id="cont">
+			<a href="../pages/contacto.html" class="cont">Contacto</a>
+		</button>
+
 	</div>
 	<div id="tronco"> <!--------------------------------- TRONCO -->
 	
@@ -50,7 +55,7 @@
 			<div class="info">
 
 				<form class="contacto" method="POST" action="mensaje.html">
-					<span class="difuso">Rellene los campos para contactar con nuestra entidad.</span>
+					<span class="difuso">Rellene los campos para contactar con nuestra entidad via web.</span>
 					<div id="inicio" class="row">
 						<div class="col">
 							<input class="nombre" name="nombre" type="text" placeholder="Nombre">
@@ -80,7 +85,31 @@
 		
 	</div>
 
-	<!--footer-->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div id="media" class="col">
+					<div class="row">
+						<p class="media_title">Redes Sociales</p>
+					</div>
+					<div class="row">
+						<a href="../pages/insta.html"><img class="logo" src="../images/logo/insta2.png" alt="logoIn"></a>
+					</div>
+					<div class="row">
+						<a href="../pages/face.html"><img class="logo" src="../images/logo/face.png" alt="logoFa"></a>
+					</div>
+				</div>
+				<div class="col">
+					
+				</div>
+				<div class="col">
+					<div id="copyleft" class="row">
+						<span class="media_title copyleft">Copyright © 2019 - Balaguer</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
 
 </div>
 <script src="code/javascript/bootstrap.min.js"></script>
