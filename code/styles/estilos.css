@@ -328,6 +328,11 @@ footer{
   height: 130px;
   width: 130px;
 }
+@media only screen and (max-width: 1105px){ /* Arreglo para la imagen de google maps */
+  #localizacion{
+    display: none;
+  }
+}
 
 
 /* Estas son las clases que utiliza la página para poner textos */

@@ -7,11 +7,3 @@ function enviarFormLang() {
 function cambiarIdioma(idioma){
     $("#idioma_actual").val(idioma);
 }
-
-function agradecerMensaje(){
-    alert("Gracias por enviarnos tu mensaje, lo tendremos en consideración.");
-}
-
-$(document).ready(function(){
-    $("#cont").addClass("reload");
-});
