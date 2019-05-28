@@ -177,6 +177,14 @@ img.expo{
   color: #440912;
 }
 
+.objeto.noticia{
+  margin: 5px;
+  margin-bottom: 15px;
+}
+img.noticia{
+  padding-top: 10px;
+}
+
 .downloadLink{
   margin-top: 3.2em;
 }
